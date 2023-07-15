@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { textColor, darkPurple, pink } from '../colors';
 
 const Resume = () => {
-  const proficiencies = ['HTML', 'CSS', 'JavaScript', 'React', 'Node.js', 'Express', 'NoSQL', 'MySQL/Sequelize', 'MongoDB/Mongoose', 'Graphic Design'];
+  const proficiencies = ['HTML', 'CSS', 'JavaScript', 'React', 'Node.js', 'Express', 'NoSQL', 'MySQL/Sequelize', 'MongoDB/Mongoose', 'GraphQL/Apollo'];
 
   return (
     <section>
