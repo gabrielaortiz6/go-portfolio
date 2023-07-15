@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/go-portfolio/static/css/main.849eb944.css",
+    "main.js": "/go-portfolio/static/js/main.8c99dcce.js",
+    "static/js/787.1ed0c42c.chunk.js": "/go-portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/hori-hori.png": "/go-portfolio/static/media/hori-hori.9bbd1bf4b289f10cfe53.png",
+    "static/media/robo-art.png": "/go-portfolio/static/media/robo-art.350476c94fcd35e2456e.png",
+    "static/media/social-media.png": "/go-portfolio/static/media/social-media.909cef2417cd8f0da692.png",
+    "static/media/calorie-tracker.png": "/go-portfolio/static/media/calorie-tracker.730e11651ba372796754.png",
+    "static/media/myface.png": "/go-portfolio/static/media/myface.0d62df030c81dec34f62.png",
+    "static/media/e-commerce.png": "/go-portfolio/static/media/e-commerce.6a107b3e100c1c91341f.png",
+    "static/media/scheduler.png": "/go-portfolio/static/media/scheduler.c7e23afc84d6c59d5906.png",
+    "static/media/logo.svg": "/go-portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/go-portfolio/index.html",
+    "main.849eb944.css.map": "/go-portfolio/static/css/main.849eb944.css.map",
+    "main.8c99dcce.js.map": "/go-portfolio/static/js/main.8c99dcce.js.map",
+    "787.1ed0c42c.chunk.js.map": "/go-portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.849eb944.css",
+    "static/js/main.8c99dcce.js"
+  ]
+}
