@@ -21,7 +21,7 @@ const Header = () => {
       <Col xs={12} md={2} className="p-3">
     <header>
       <h1 style={{ color: pink }}>Gabriela M. Ortiz</h1>
-      <h2>Full Stack Developer </h2>
+      <h4>Full Stack Developer </h4>
       <Nav className="flex-column">
         <Nav.Item>
           <Nav.Link style={{color: textColor}}
