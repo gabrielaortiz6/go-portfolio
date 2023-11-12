@@ -1,6 +1,13 @@
 import React, { useState } from 'react';
-import { Form, Button } from 'react-bootstrap';
-import { midPurple, textColor, darkPurple, pink } from '../colors';
+import { Form } from 'react-bootstrap';
+import { greenWhite, limeGreen, black } from '../colors';
+
+//TO DO: EDIT SUBMIT BUTTON SO THERE IS MORE CONTRAST
+
+//TO DO: ON CLICK [SUBMIT], WRITE A THANK YOU MESSAGE AND CLICK SEND 
+//ANOTHER MESSAGE TO GO BACK
+
+//TO DO: ACTUALLY SAVE THE MESSAGE ONTO A DB
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -46,10 +53,10 @@ const Contact = () => {
   };
 
   return (
-    <section className="p-3">
+    <section className="p-3 flex-box">
       <Form onSubmit={handleSubmit}>
         <Form.Group controlId="formName"  className="m-3">
-          <Form.Label style={{color: textColor}}>Name</Form.Label>
+          <Form.Label style={{color: greenWhite}}>Name</Form.Label>
           <Form.Control
             type="text"
             placeholder="Name"
@@ -61,7 +68,7 @@ const Contact = () => {
         </Form.Group>
 
         <Form.Group controlId="formEmail"  className="m-3">
-          <Form.Label style={{color: textColor}}>Email address</Form.Label>
+          <Form.Label style={{color: greenWhite}}>Email address</Form.Label>
           <Form.Control
             type="email"
             placeholder="Email"
@@ -73,7 +80,7 @@ const Contact = () => {
         </Form.Group>
 
         <Form.Group controlId="formMessage"  className="m-3">
-          <Form.Label style={{color: textColor}}>Message</Form.Label>
+          <Form.Label style={{color: greenWhite}}>Message</Form.Label>
           <Form.Control
             as="textarea"
             rows={3}
@@ -82,10 +89,11 @@ const Contact = () => {
             onChange={(e) => setMessage(e.target.value)}
           />
         </Form.Group>
-
-        <Button style={{borderColor: pink, backgroundColor: pink, color: textColor}}variant="primary" class="btn" className="m-3 btn" type="submit">
+        <div className='flex-box'>
+        <button role="button" style={{color: greenWhite}} className="m-3 form-submit-btn" type="submit" >
           Submit
-        </Button>
+        </button>
+        </div>
       </Form>
     </section>
   );

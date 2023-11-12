@@ -18,5 +18,5 @@ react-boostrap was used, as well as react-helmet, Google Fonts, and react-icons
 
 ### Deployment
 
-* [Deployed Site]()
-* [GitHub](https://github.com/gabrielaortiz6/gmo-portfolio)
+* [Deployed Site](https://gabrielaortiz6.github.io/go-portfolio/)
+* [GitHub](https://github.com/gabrielaortiz6/go-portfolio)

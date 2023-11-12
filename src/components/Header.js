@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { lightPurple, midPurple, textColor, darkPurple, darkestPurple, pink } from '../colors';
+import { greenWhite, limeGreen } from '../colors';
 import { Container, Row, Nav, Col } from 'react-bootstrap';
 import About from './About';
 import Portfolio from './Portfolio';
@@ -20,11 +20,11 @@ const Header = () => {
       <Row className="flex-grow-1 flex-column">
       <Col xs={12} md={2} className="p-3">
     <header>
-      <h1 style={{ color: pink }}>Gabriela M. Ortiz</h1>
+      <h1 style={{ color: limeGreen }}>Gabriela M. Ortiz</h1>
       <p>full stack developer </p>
       <Nav className="flex-column">
         <Nav.Item>
-          <Nav.Link style={{color: textColor}}
+          <Nav.Link style={{color: greenWhite}}
             className={activeSection === 'About' ? 'nav-link active' : 'nav-link'}
             onClick={() => handleNavigationClick('About')}
           >
@@ -32,7 +32,7 @@ const Header = () => {
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link style={{color: textColor}}
+          <Nav.Link style={{color: greenWhite}}
             className={activeSection === 'Portfolio' ? 'nav-link active' : 'nav-link'}
             onClick={() => handleNavigationClick('Portfolio')}
           >
@@ -40,7 +40,7 @@ const Header = () => {
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link style={{color: textColor}}
+          <Nav.Link style={{color: greenWhite}}
             className={activeSection === 'Contact' ? 'nav-link active' : 'nav-link'}
             onClick={() => handleNavigationClick('Contact')}
           >
@@ -48,7 +48,7 @@ const Header = () => {
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link style={{color: textColor}}
+          <Nav.Link style={{color: greenWhite}}
             className={activeSection === 'Resume' ? 'nav-link active' : 'nav-link'}
             onClick={() => handleNavigationClick('Resume')}
           >

@@ -2,7 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 import Layout from './components/Layout';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { darkPurple } from './colors';
+
+//TO DO: ADD BORDER
+//TO DO: ADD LIGHT MODE AND DARK MODE SWITCH
 
 const App = () => {
   return (
