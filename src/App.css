@@ -71,6 +71,7 @@ a,
 .resume-link {
   color: var(--text-color);
   transition: color 0.3s, transform 0.3s;
+  font-size: 18px;
 }
 
 a:hover,
