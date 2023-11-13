@@ -5,7 +5,7 @@ import About from './About';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
 import Resume from './Resume';
-import '../Header.css';
+import '../App.css';
 
 const Header = () => {
   const [activeSection, setActiveSection] = useState('About');

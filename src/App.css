@@ -32,10 +32,10 @@
   color: var(--text-color);
 }
 
-.App-link {
+/* .App-link {
   color: var(--text-color);
   transition: color 0.3s, transform 0.3s;
-}
+} */
 
 p,
 h2,
@@ -65,27 +65,53 @@ li:before {
   padding-right: 5px;
 }
 
-a,
-.footer-link,
-.project-link,
-.resume-link {
+.nav-link {
+  position: relative;
+  padding-left: 20px;
+  transition: padding-left 0.3s ease;
   color: var(--text-color);
   transition: color 0.3s, transform 0.3s;
-  font-size: 18px;
 }
 
-a:hover,
-.footer-link:hover,
-.project-link:hover,
-.resume-link:hover {
-  color: rgb(197, 189, 189);
+
+.nav-link.active::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--green-accent);
+}
+
+.nav-link.active {
+  padding-left: 30px;
+}
+
+.nav-link:hover {
+  color: #333;
   transform: scale(0.95);
 }
 
 .footer-link,
 .project-link,
-a.resume-link {
+.resume-link {
+  color: var(--text-color);
+  transition: color 0.3s, text-shadow 0.3s, transform 0.3s;
+  font-size: 18px;
   text-decoration: none;
+  text-shadow: none;
+}
+
+.project-link:hover,
+.resume-link:hover,
+.link-container:hover,
+.footer-link:hover {
+  color: var(--green-accent);
+  text-shadow: 0 0 1.5px var(--green-accent);
+  transform: scale(0.95);
 }
 
 .resume-link {
@@ -97,16 +123,9 @@ a.resume-link {
   bottom: 0;
   width: 50%;
   padding: 20px;
+  background-color: transparent;
 }
 
-/* .btn:hover {
-  transform: scale(0.95);
-}
-
-.btn:active {
-  color: #333;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-} */
 
 .flex-box {
   display: flex;
@@ -150,14 +169,12 @@ a.resume-link {
 .form-submit-btn:hover {
   color: #fff;
   background-color: var(--green-accent);
-  /* box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px; 
-    border: 2px solid var(--text-color);  */
   transform: translateY(-1.5px);
   box-shadow: var(--glow) 0px 0px 20px;
   border: 1px solid var(--glow);
   text-shadow:
     -.5px -.5px 0 #4d4e4d,
-    .5px -.5px 0 #4d4e4d, 
+    .5px -.5px 0 #4d4e4d,
     -.5px .5px 0 #4d4e4d,
     .5px .5px 0 #4d4e4d;
 }
@@ -264,18 +281,14 @@ a.resume-link {
 
 ::-webkit-scrollbar {
   width: 5px;
-  /* Width of the scrollbar */
   right: 10px;
   position: absolute
 }
 
-/* Target the scrollbar track */
 ::-webkit-scrollbar-track {
   background: transparent;
-  /* Background color of the scrollbar track */
 }
 
-/* Target the scrollbar thumb */
 ::-webkit-scrollbar-thumb {
   background: transparent;
 }

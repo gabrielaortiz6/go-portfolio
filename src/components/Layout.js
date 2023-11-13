@@ -4,7 +4,7 @@ import Footer from './Footer';
 
 const Layout = () => {
   return (
-    // do svg noise filter instead
+    // TO DO: do svg noise filter instead
     <div className='starry-background'>
       <Header />
       <Footer />
