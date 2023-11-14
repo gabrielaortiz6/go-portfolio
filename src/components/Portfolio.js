@@ -1,7 +1,8 @@
+// TO DO: CONTENT EDIT
 import React from 'react';
 import { Card, Col, Row } from 'react-bootstrap';
 import { FaGithub } from 'react-icons/fa';
-import { lightPurple, midPurple, textColor, darkPurple, darkestPurple, pink } from '../colors';
+import { textColor,} from '../colors';
 import calorieTrackerImg from '../assets/images/calorie-tracker.png';
 import horiHoriImg from '../assets/images/hori-hori.png';
 import schedulerImg from '../assets/images/scheduler.png';

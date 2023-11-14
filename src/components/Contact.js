@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import { Form } from 'react-bootstrap';
 import { greenWhite, limeGreen, black } from '../colors';
 
-//TO DO: EDIT SUBMIT BUTTON SO THERE IS MORE CONTRAST
-
 //TO DO: ON CLICK [SUBMIT], WRITE A THANK YOU MESSAGE AND CLICK SEND 
 //ANOTHER MESSAGE TO GO BACK
 
@@ -53,13 +51,14 @@ const Contact = () => {
   };
 
   return (
-    <section className="p-3 flex-box">
+    <section className="p-3 flex-box m-4" >
       <Form onSubmit={handleSubmit}>
-        <Form.Group controlId="formName"  className="m-3">
-          <Form.Label style={{color: greenWhite}}>Name</Form.Label>
+        <Form.Group controlId="formName" className="m-3 mb-4">
+          <Form.Label>Name</Form.Label>
           <Form.Control
             type="text"
             placeholder="Name"
+            id="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
             isInvalid={nameError}
@@ -67,10 +66,11 @@ const Contact = () => {
           {nameError && <Form.Text className="text-danger">Name is required</Form.Text>}
         </Form.Group>
 
-        <Form.Group controlId="formEmail"  className="m-3">
-          <Form.Label style={{color: greenWhite}}>Email address</Form.Label>
+        <Form.Group controlId="formEmail" className="m-3 mb-4" >
+          <Form.Label>Email address</Form.Label>
           <Form.Control
             type="email"
+            id="email"
             placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -80,9 +80,10 @@ const Contact = () => {
         </Form.Group>
 
         <Form.Group controlId="formMessage"  className="m-3">
-          <Form.Label style={{color: greenWhite}}>Message</Form.Label>
+          <Form.Label>Message</Form.Label>
           <Form.Control
             as="textarea"
+            id="message"
             rows={3}
             placeholder="Enter your message"
             value={message}
@@ -90,7 +91,7 @@ const Contact = () => {
           />
         </Form.Group>
         <div className='flex-box'>
-        <button role="button" style={{color: greenWhite}} className="m-3 form-submit-btn" type="submit" >
+        <button role="button" style={{color: greenWhite, display: 'flex'}} className="mt-3 mb-5 form-submit-btn" type="submit" >
           Submit
         </button>
         </div>

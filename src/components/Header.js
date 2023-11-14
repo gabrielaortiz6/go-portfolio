@@ -1,3 +1,7 @@
+//TO DO: ADD THAT IMAGE OF ME COVERED IN BLOOD?
+//TO DO: EDIT TO H1 NAME
+//TO DO: MAYBE TRANSITION CHANGE - ADD GLOW TO BULLET?
+
 import React, { useState } from 'react';
 import { greenWhite, limeGreen } from '../colors';
 import { Container, Row, Nav, Col } from 'react-bootstrap';

@@ -1,6 +1,9 @@
+//TO DO: LAYOUT EDITS
+//TO DO: CONTENT EDIT
+//TO DO: CHANGE IMAGE USED?
+
 import React from 'react';
 import { Card } from 'react-bootstrap';
-import { darkPurple } from '../colors';
 import myFace from '../assets/images/myface.png';
 
 const AboutMe = () => {

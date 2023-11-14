@@ -1,3 +1,18 @@
+/* ENTIRE LIST OF TO DOS
+1. INTERACTION WITH CONTACT FORM
+2. PADDING OR MARGIN ISSUE WITH HOVER ANIMATION
+3. LAYOUT CHANGES *SIZING*
+4. HEADER CHANGES - IMAGE & TYPOGRAPHY
+5. SVG NOISE/GRAIN FILTER
+6. PORTFOLIO EDITS
+7. INSTALL MAILER TO EMAIL
+8. CONTACT FORM MESSAGE
+9. SAVE CONTACT FORM INFO
+10. BORDER WITH DARK AND LIGHT MODE
+*/
+
+@import url('familjen-grotesk.css');
+
 :root {
   --black: #0D0D0D;
   --text-color: #eff1ec;
@@ -7,7 +22,8 @@
 }
 
 .App {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'FamiljenGrotesk-Regular', sans-serif;
+  background-color: black;
 }
 
 .App-logo {
@@ -32,23 +48,32 @@
   color: var(--text-color);
 }
 
-/* .App-link {
+.App-link {
   color: var(--text-color);
   transition: color 0.3s, transform 0.3s;
-} */
+}
+
+h1 {
+font-family: 'FamiljenGrotesk-Bold';
+font-size: 45px;
+}
 
 p,
 h2,
 h3 {
+  font-family: 'FamiljenGrotesk-Regular';
   color: var(--text-color);
 }
 
 h2,
 h3 {
+  font-family: 'FamiljenGrotesk-Regular';
   text-align: right;
+  font-style: bold;
 }
 
 ul {
+  font-family: 'FamiljenGrotesk-Regular';
   list-style: none;
   margin-left: 0;
   padding-left: 0;
@@ -62,6 +87,7 @@ li {
 
 li:before {
   content: "+";
+  color: var(--green-accent);
   padding-right: 5px;
 }
 
@@ -72,7 +98,6 @@ li:before {
   color: var(--text-color);
   transition: color 0.3s, transform 0.3s;
 }
-
 
 .nav-link.active::before {
   content: '';
@@ -95,45 +120,86 @@ li:before {
   transform: scale(0.95);
 }
 
-.footer-link,
-.project-link,
+.link-container,
 .resume-link {
+  box-shadow: inset 0 0 0 0 var(--green-accent);
+  color: var(--green-accent);
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+  width: 100%
+}
+
+.link-container:hover,
+.resume-link:hover {
+  box-shadow: inset 100px 0 0 0 var(--green-accent),
+          0 0 2px 2px var(--glow);
+  color: black;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  width: 100%;
+}
+
+.resume-link {
+font-size: 24px;
+text-align: right;
+}
+
+.project-link {
   color: var(--text-color);
   transition: color 0.3s, text-shadow 0.3s, transform 0.3s;
-  font-size: 18px;
   text-decoration: none;
   text-shadow: none;
 }
 
-.project-link:hover,
-.resume-link:hover,
-.link-container:hover,
-.footer-link:hover {
+.project-link:hover {
   color: var(--green-accent);
   text-shadow: 0 0 1.5px var(--green-accent);
   transform: scale(0.95);
-}
-
-.resume-link {
-  font-style: italic;
 }
 
 .fixed-bottom {
   position: fixed;
   bottom: 0;
   width: 50%;
-  padding: 20px;
+  padding: 0 0 20px 0;
   background-color: transparent;
 }
 
-
 .flex-box {
   display: flex;
-  justify-content: center;
   align-items: center;
+  text-align: center;
+}
+
+label.form-label {
+  color: var(--text-color); 
+  transition: color 0.3s ease;
+}
+
+#name,
+#message,
+#email {
+color: var(--text-color);
+background-color: white;
+transition: color 0.3s ease;
+}
+
+#name:focus,
+#message:focus,
+#email:focus {
+  border: 2px solid var(--green-accent);
+  box-shadow: 0 0 5px var(--green-accent);
+  transition: color 0.3s ease, box-shadow 0.3s ease
+}
+
+input#name:focus + label.form-label {
+  color: var(--green-accent);
 }
 
 .form-submit-btn {
+  display: flex;
   appearance: none;
   justify-content: center;
   align-items: center;
@@ -143,11 +209,11 @@ li:before {
   box-sizing: border-box;
   color: #3B3B3B;
   cursor: pointer;
-  font-family: Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: Helvetica, "FamiljenGrotesk-Regular", sans-serif;
   font-size: 16px;
   font-weight: 600;
   line-height: normal;
-  margin: 0;
+  margin: auto;
   min-height: 60px;
   min-width: 0;
   outline: none;
@@ -237,8 +303,8 @@ li:before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--black);
   overflow: hidden;
+  background-color: black;
 }
 
 .starry-background::before {
@@ -292,3 +358,9 @@ li:before {
 ::-webkit-scrollbar-thumb {
   background: transparent;
 }
+
+/* .border {
+  border: 1px solid rgba(255, 255, 255, 0.783);
+  margin: 5px;
+  background-color: black;
+} */
