@@ -22,7 +22,7 @@ const Header = () => {
   return (
       <Container fluid className="vh-100 d-flex flex-column">
       <Row className="flex-grow-1 flex-column">
-      <Col xs={12} md={2} className="p-3">
+      <Col xs={12} md={3} className="p-3">
     <header>
       <h1 style={{ color: limeGreen }}>Gabriela M. Ortiz</h1>
       <p>full stack developer </p>
@@ -62,7 +62,7 @@ const Header = () => {
       </Nav>
       </header>
       </Col>
-      <Col xs={3} md={3} style={{ position: 'fixed', bottom: 0, right: 0 }} className="p-3 d-flex justify-content-end">
+      <Col xs={3} md={5} style={{ position: 'fixed', bottom: 0, right: 0 }} className="p-2 d-flex justify-content-end">
       <div className="align-self-end">
       {activeSection === 'About' && <About />}
       {activeSection === 'Portfolio' && <Portfolio />}

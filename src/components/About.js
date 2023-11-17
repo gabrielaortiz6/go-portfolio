@@ -14,9 +14,9 @@ const AboutMe = () => {
         <Card.Text style={{ textAlign: 'left' }}>
           <p>
             Born in 1998 in Cienfuegos, Cuba, raised in Miami, FL, currently based in PVD, RI. </p>
-            <p>Background in media theory and media production (text, visual, time-based)
-            from Brown University. </p>
-           <p> Lover of puzzles and cats.
+            <p>Bachelor's in media theory and media production (text, visual, time-based)
+            from Brown University. Fullstack developer interested in data and design. </p>
+           <p> Lover of cats.
           </p>
         </Card.Text>
       </Card>

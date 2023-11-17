@@ -54,7 +54,7 @@ const Contact = () => {
     <section className="p-3 flex-box m-4" >
       <Form onSubmit={handleSubmit}>
         <Form.Group controlId="formName" className="m-3 mb-4">
-          <Form.Label>Name</Form.Label>
+          <Form.Label className='label'>Name</Form.Label>
           <Form.Control
             type="text"
             placeholder="Name"
@@ -67,7 +67,7 @@ const Contact = () => {
         </Form.Group>
 
         <Form.Group controlId="formEmail" className="m-3 mb-4" >
-          <Form.Label>Email address</Form.Label>
+          <Form.Label className='label'>Email address</Form.Label>
           <Form.Control
             type="email"
             id="email"
@@ -80,7 +80,7 @@ const Contact = () => {
         </Form.Group>
 
         <Form.Group controlId="formMessage"  className="m-3">
-          <Form.Label>Message</Form.Label>
+          <Form.Label className='label'>Message</Form.Label>
           <Form.Control
             as="textarea"
             id="message"
@@ -90,11 +90,9 @@ const Contact = () => {
             onChange={(e) => setMessage(e.target.value)}
           />
         </Form.Group>
-        <div className='flex-box'>
-        <button role="button" style={{color: greenWhite, display: 'flex'}} className="mt-3 mb-5 form-submit-btn" type="submit" >
+        <button role="button" style={{ display: 'flex'}} className="mt-3 mb-5 form-submit-btn" type="submit" >
           Submit
         </button>
-        </div>
       </Form>
     </section>
   );
