@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Form } from 'react-bootstrap';
-import { greenWhite, limeGreen, black } from '../colors';
+
+
+//TO DO: MAKE CONTACT FORM LARGER
 
 //TO DO: ON CLICK [SUBMIT], WRITE A THANK YOU MESSAGE AND CLICK SEND 
 //ANOTHER MESSAGE TO GO BACK

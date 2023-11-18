@@ -1,9 +1,8 @@
-//TO DO: ADD THAT IMAGE OF ME COVERED IN BLOOD?
+//TO DO: ADD THAT IMAGE OF ME COVERED IN BLOOD OR DO BACKGROUND GIF DRAWING
 //TO DO: EDIT TO H1 NAME
 //TO DO: MAYBE TRANSITION CHANGE - ADD GLOW TO BULLET?
 
 import React, { useState } from 'react';
-import { greenWhite, limeGreen } from '../colors';
 import { Container, Row, Nav, Col } from 'react-bootstrap';
 import About from './About';
 import Portfolio from './Portfolio';
@@ -22,13 +21,13 @@ const Header = () => {
   return (
       <Container fluid className="vh-100 d-flex flex-column">
       <Row className="flex-grow-1 flex-column">
-      <Col xs={12} md={3} className="p-3">
+      <Col xs={12} md={6} className="p-3">
     <header>
-      <h1 style={{ color: limeGreen }}>Gabriela M. Ortiz</h1>
-      <p>full stack developer </p>
+      <h1 className='header'>Gabriela M. Ortiz</h1>
+      <h2 className='subheader'>Full Stack Developer </h2>
       <Nav className="flex-column">
         <Nav.Item>
-          <Nav.Link style={{color: greenWhite}}
+          <Nav.Link style={{fontSize: '1.2rem'}}
             className={activeSection === 'About' ? 'nav-link active' : 'nav-link'}
             onClick={() => handleNavigationClick('About')}
           >
@@ -36,7 +35,7 @@ const Header = () => {
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link style={{color: greenWhite}}
+          <Nav.Link style={{fontSize: '1.2rem'}}
             className={activeSection === 'Portfolio' ? 'nav-link active' : 'nav-link'}
             onClick={() => handleNavigationClick('Portfolio')}
           >
@@ -44,7 +43,7 @@ const Header = () => {
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link style={{color: greenWhite}}
+          <Nav.Link style={{fontSize: '1.2rem'}}
             className={activeSection === 'Contact' ? 'nav-link active' : 'nav-link'}
             onClick={() => handleNavigationClick('Contact')}
           >
@@ -52,7 +51,7 @@ const Header = () => {
           </Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link style={{color: greenWhite}}
+          <Nav.Link style={{ fontSize: '1.2rem'}}
             className={activeSection === 'Resume' ? 'nav-link active' : 'nav-link'}
             onClick={() => handleNavigationClick('Resume')}
           >
@@ -62,7 +61,7 @@ const Header = () => {
       </Nav>
       </header>
       </Col>
-      <Col xs={3} md={5} style={{ position: 'fixed', bottom: 0, right: 0 }} className="p-2 d-flex justify-content-end">
+      <Col xs={3} md={5} style={{ position: 'fixed', bottom: 0, right: 0, marginRight: '10px'}} className="p-2 d-flex justify-content-end">
       <div className="align-self-end">
       {activeSection === 'About' && <About />}
       {activeSection === 'Portfolio' && <Portfolio />}

@@ -8,17 +8,14 @@ const Footer = () => {
       <Container className="mt-4" style={{ fontStyle: 'italic'}}>
         <Row style={{ margin: '0px', padding: '0px'}}>
           <Col style={{ margin: '0px'}}>
-       
             <a href="https://github.com/gabrielaortiz6/" target="_blank" className="link-container" rel="noopener noreferrer">
               (github)
             </a>
-           
           </Col>
           <Col>
             <a href="https://www.linkedin.com/in/gabriela-ortiz-74641518a/" className="link-container" target="_blank" rel="noopener noreferrer">
              (linkedin)
             </a>
-    
           </Col>
           <Col>
             <a href="https://www.instagram.com/mieldeabeja.art/" className="link-container" target="_blank" rel="noopener noreferrer">

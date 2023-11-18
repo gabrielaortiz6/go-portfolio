@@ -1,10 +1,10 @@
 /* ENTIRE LIST OF TO DOS
-1. INTERACTION WITH CONTACT FORM
-2. PADDING OR MARGIN ISSUE WITH HOVER ANIMATION
-3. LAYOUT CHANGES *SIZING OF RESUME AND ABT ME IMAGE*
-4. HEADER CHANGES - IMAGE & TYPOGRAPHY
+1. CONTACT FORM SIZE (MAKE BIGGER)
+2. HEADER LAYOUT EDITS
+3. PORTFOLIO LAYOUT EDITS
+4. SIZING OF ABT ME IMAGE
 5. SVG NOISE/GRAIN FILTER
-6. PORTFOLIO EDITS
+6. DRAWING OF ME BEING CREATED AS BACKGROUND
 7. INSTALL MAILER TO EMAIL
 8. CONTACT FORM MESSAGE
 9. SAVE CONTACT FORM INFO
@@ -53,23 +53,36 @@
   transition: color 0.3s, transform 0.3s;
 }
 
-h1 {
+.header {
   font-family: 'FamiljenGrotesk-Bold';
-  font-size: 45px;
+  font-size: 4.5rem;
+  color: var(--green-accent);
+  letter-spacing: 2.5px;
+  margin-bottom: 1px;
+  padding-bottom: 0px;
+  margin-left: 12px;
 }
 
-p,
-h2,
-h3 {
+.subheader {
+  color: var(--text-color);
   font-family: 'FamiljenGrotesk-Regular';
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  margin-top: 0px;
+  padding-top: 0px;
+  margin-left: 12px
+}
+
+h3 {
+  font-family: 'FamiljenGrotesk-Variable';
+  text-align: right;
+  font-style: bold;
   color: var(--text-color);
 }
 
-h2,
-h3 {
+p {
   font-family: 'FamiljenGrotesk-Regular';
-  text-align: right;
-  font-style: bold;
+  color: var(--text-color);
 }
 
 ul {
@@ -91,12 +104,18 @@ li:before {
   padding-right: 5px;
 }
 
+.nav.link {
+  color: var(--text-color)
+}
+
 .nav-link {
+  font-family: 'FamiljenGrotesk-Variable';
+  letter-spacing: 1.5px; 
   position: relative;
   padding-left: 20px;
-  transition: padding-left 0.3s ease;
-  color: var(--text-color);
-  transition: color 0.3s, transform 0.3s;
+  transition: padding-left 0.3s ease, color 0.3s, transform 0.3s;
+  width: 15%;
+  color: var(--text-color) !important
 }
 
 .nav-link.active::before {
@@ -116,7 +135,7 @@ li:before {
 }
 
 .nav-link:hover {
-  color: #333;
+  color: rgb(63, 69, 63) !important;
   transform: scale(0.95);
 }
 
@@ -135,23 +154,6 @@ li:before {
   padding: 5px;
 }
 
-.link-container {
-  box-shadow: inset 0 0 0 0 var(--green-accent);
-  color: var(--green-accent);
-  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-  text-decoration: none;
-  display: flex;
-  justify-content: flex-start;
-  text-align: center
-}
-
-.link-container:hover {
-  background-color: var(--green-accent);
-  box-shadow: 0 0 10px var(--green-accent);
-  color: #333;
-  transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-
 .project-link {
   color: var(--text-color);
   transition: color 0.3s, text-shadow 0.3s, transform 0.3s;
@@ -165,6 +167,26 @@ li:before {
   transform: scale(0.95);
 }
 
+.link-container {
+  font-family: 'FamiljenGrotesk-Variable';
+  box-shadow: inset 0 0 0 0 var(--green-accent);
+  color: var(--green-accent);
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+  width: 57%;
+}
+
+.link-container:hover {
+  background-color: var(--green-accent);
+  box-shadow: 0 0 10px var(--green-accent);
+  color: #333;
+  transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  padding: 2px;
+}
+
 .fixed-bottom {
   position: fixed;
   bottom: 0;
@@ -173,6 +195,7 @@ li:before {
   background-color: transparent;
 }
 
+/* Make bigger cntact form */
 .flex-box {
   display: flex;
   align-items: right;
