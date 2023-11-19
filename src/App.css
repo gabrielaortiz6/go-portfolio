@@ -1,14 +1,9 @@
 /* ENTIRE LIST OF TO DOS
-1. CONTACT FORM EDITS
-2. INSTALL MAILER TO EMAIL
-------------------------------
-3. EDIT RIGHT MARGIN FOR PORTFOLIO AND ABOUT
-4. PORTFOLIO FORM TRANSFORMATION ON HOVER
-5. SVG NOISE/GRAIN FILTER OR DRAWING OF ME BEING CREATED AS BACKGROUND
-5. CONTACT FORM MESSAGE
-6. SAVE CONTACT FORM INFO
-7. BORDER
-8. DARK AND LIGHT MODE
+1. SVG NOISE/GRAIN FILTER OR DRAWING OF ME BEING CREATED AS BACKGROUND
+2. CONTACT FORM MESSAGE
+3. SAVE CONTACT FORM INFO
+4. BORDER
+5. DARK AND LIGHT MODE
 */
 
 @import url('familjen-grotesk.css');
@@ -339,7 +334,23 @@ box-shadow: var(--glow) 0px 0px 8px;
 }
 
 .bg-color {
-  background-color: var(--black);
+  background-color: black;
+  position: relative;
+  height: 100vh;
+  opacity: 97%;
+}
+
+.bg-grain {
+  position: absolute;
+  background-image: url('assets/images/black-bg.jpg');
+  background-size: cover;
+  height: 100vh;
+  opacity: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; /* Ensure the overlay is behind the content */
 }
 
 /* .starry-background {

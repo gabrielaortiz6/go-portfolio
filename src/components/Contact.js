@@ -1,14 +1,10 @@
-import React, { useState } from 'react';
-import { Form, Row } from 'react-bootstrap'
-import Button from 'react-bootstrap/Button';
-
-
 //TO DO: STYLISTIC TWEAKS TO SUBMIT BUTTON
-
 //TO DO: ON CLICK [SUBMIT], WRITE A THANK YOU MESSAGE AND CLICK SEND 
 //ANOTHER MESSAGE TO GO BACK
-
 //TO DO: ACTUALLY SAVE THE MESSAGE ONTO A DB
+
+import React, { useState } from 'react';
+import { Form, Row } from 'react-bootstrap'
 
 const Contact = () => {
   const [name, setName] = useState('');
