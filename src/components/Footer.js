@@ -1,8 +1,8 @@
-//TO DO: MAILER
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 
 const Footer = () => {
+  const emailAddress = 'gabriela_ortiz1@alumni.brown.edu';
   return (
     <footer className="fixed-bottom" >
       <Container className="mt-4" style={{ fontStyle: 'italic'}}>
@@ -23,7 +23,7 @@ const Footer = () => {
             </a>
           </Col>
           <Col>
-            <a href="https://www.instagram.com/mieldeabeja.art/" className="link-container" target="_blank" rel="noopener noreferrer">
+            <a href={`mailto:${emailAddress}`} className="link-container" target="_blank" rel="noopener noreferrer">
              (email)
             </a>
           </Col>

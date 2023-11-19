@@ -218,7 +218,7 @@ li:before {
   appearance: none;
   justify-content: center;
   align-items: center;
-  background-color: var(--green-accent);
+  background-color: transparent;
   border: 2px solid var(--green-accent);
   border-radius: 15px;
   box-sizing: border-box;
@@ -253,10 +253,18 @@ li:before {
 }
 
 .form-submit-btn:hover {
+background-color: var(--green-accent);
+box-shadow: var(--glow) 0px 0px 8px;
+}
+
+.form-submit-btn:active {
+  background-color: #75b743;
+}
+
+.form-submit-btn:hover,
+.form-submit-btn:active {
   color: #fff;
-  background-color: #85cf4c;
   transform: translateY(-1.5px);
-  box-shadow: var(--glow) 0px 0px 20px;
   border: 1px solid var(--glow);
 }
 
