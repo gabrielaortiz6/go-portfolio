@@ -8,7 +8,7 @@ const Resume = () => {
   return (
     <section>
       <Container>
-        <Row className="mb-5">
+        <Row className="mb-5" style={{marginRight: '12px'}}>
           <Col>
         <Row className="mb-3">
           <Col>

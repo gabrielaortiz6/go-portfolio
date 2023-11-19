@@ -53,18 +53,39 @@ const Portfolio = () => {
 
 return (
   <section>
-    <div className='portfolio-div' style={{ padding: '40px', marginTop: '8px', height: '100vh', overflowX: 'hidden', overflowY: 'auto', borderRadius: '4px' }}>
-      <Row className="g-4 mt-1 mb-2 justify-content-end">
+    <div className='container' 
+    style={{ padding: '40px', 
+    marginTop: '12px', 
+    marginBottom: '10px',
+    height: '100vh', 
+    overflowX: 'hidden', 
+    overflowY: 'auto', 
+    borderRadius: '4px'}}>
+      <Row className="g-4 mb-4 mt-1 justify-content-end">
         {projects.map((project, index) => (
           <Col key={index} xs={12} sm={12} md={10}>
-            <Card border="none" className="project-title" style={{ marginBottom: '15px', marginTop: '5px', background: 'none', position: 'relative', boxShadow: '5px 5px 15px rgba(192, 192, 192, 0.5)'}}>
-              <Card.Img style={{ borderRadius: '3px', marginTop: '1px',  filter: 'grayscale(55%)' }} variant="bottom" src={project.image} alt={project.title} />
+            <Card border="none" 
+            className="content"
+            style={{ marginBottom: '15px', 
+            marginTop: '5px', 
+            background: 'none', 
+            position: 'relative', 
+            boxShadow: '5px 5px 15px rgba(192, 192, 192, 0.5)'}}>
+              <Card.Img style={{ borderRadius: '3px', 
+              marginTop: '1px',  
+              filter: 'grayscale(68%)' }} 
+              variant="bottom" 
+              src={project.image} 
+              alt={project.title} />
             <div className="image-overlay"></div>
-              <Card.ImgOverlay style={{ display: 'flex', flexDirection: 'column-reverse', alignItems: 'flex-end' }}>
-                <Card.Title style={{ color: textColor, display: 'inline-block', marginBottom: '2px', paddingRight: '15px' }} className="text-end">
-                  <a variant="link" href={project.githubLink} style={{ display: 'inline-block', textAlign: 'right', marginRight: '5px', color: textColor }} target="_blank" rel="noopener noreferrer">
-                  </a>
-                  <a href={project.deployedLink} target="_blank" rel="noopener noreferrer" className="project-link">
+              <Card.ImgOverlay className="content-overlay">
+                <Card.Title>
+                  <a className="project-link"
+                  href={project.deployedLink} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  style={{ color: textColor, 
+                  textDecoration: 'none'}}>
                     {project.title}
                   </a>
                 </Card.Title>
