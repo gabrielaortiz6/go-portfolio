@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Form } from 'react-bootstrap';
+import { Form, Row } from 'react-bootstrap'
+import Button from 'react-bootstrap/Button';
 
 //TO DO: MAKE CONTACT FORM LARGER
 
@@ -20,7 +21,6 @@ const Contact = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    // Perform validation
     if (!name.trim()) {
       setNameError(true);
       return;
@@ -34,12 +34,10 @@ const Contact = () => {
       return;
     }
 
-    // Submit the form
     console.log('Name:', name);
     console.log('Email:', email);
     console.log('Message:', message);
 
-    // Reset form fields
     setName('');
     setEmail('');
     setMessage('');
@@ -48,14 +46,13 @@ const Contact = () => {
   };
 
   const isValidEmail = (value) => {
-    // Basic email format validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(value);
   };
 
   return (
-    <section className="p-3 flex-box m-4" >
-      <Form onSubmit={handleSubmit}>
+    <Row className="p-3 justify-content-end" style={{textAlign: 'right'}}>
+      <Form onSubmit={handleSubmit} style={{ fontSize: '1.5rem' }}>
         <Form.Group controlId="formName" className="m-3 mb-4">
           <Form.Label className='label'>Name</Form.Label>
           <Form.Control
@@ -65,6 +62,7 @@ const Contact = () => {
             value={name}
             onChange={(e) => setName(e.target.value)}
             isInvalid={nameError}
+            style={{ fontSize: '1.2rem' }}
           />
           {nameError && <Form.Text className="text-danger">Name is required</Form.Text>}
         </Form.Group>
@@ -74,10 +72,11 @@ const Contact = () => {
           <Form.Control
             type="email"
             id="email"
-            placeholder="Email"
+            placeholder="123@yahoo.com"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             isInvalid={emailError}
+            style={{ fontSize: '1.2rem' }}
           />
           {emailError && <Form.Text className="text-danger">Please enter a valid email address</Form.Text>}
         </Form.Group>
@@ -90,6 +89,7 @@ const Contact = () => {
             rows={3}
             placeholder="Enter your message"
             value={message}
+            style={{ fontSize: '1.5rem' }}
             onChange={(e) => setMessage(e.target.value)}
           />
         </Form.Group>
@@ -97,7 +97,7 @@ const Contact = () => {
           Submit
         </button>
       </Form>
-    </section>
+    </Row>
   );
 };
 

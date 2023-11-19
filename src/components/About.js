@@ -1,5 +1,4 @@
-//TO DO: LAYOUT EDITS
-//TO DO: CHANGE IMAGE USED?
+//TO DO: FIX RIGHT MARGIN
 
 import React from 'react';
 import { Card, Container, Col, Row, Image } from 'react-bootstrap';
@@ -8,8 +7,8 @@ import myFace from '../assets/images/myface.png';
 const AboutMe = () => {
   return (
       <Container style={{marginTop: '5px'}}>
-        <Row className="justify-content-end" style={{marginRight: '10px'}}>
-          <Col xs={6} md={8} >
+        <Row className="justify-content-end" style={{marginRight: '5px'}}>
+          <Col xs={6} md={9} >
             <Image src={myFace} style={{ width: '95%'}} className="mb-3" rounded alt="About Me Image"/>
           <Card body className="mb-2 border-0" style={{ backgroundColor: 'transparent' }}>
             <Card.Text style={{ textAlign: 'right' }}>

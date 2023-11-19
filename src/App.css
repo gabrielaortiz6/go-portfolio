@@ -1,14 +1,14 @@
 /* ENTIRE LIST OF TO DOS
-1. PORTFOLIO LAYOUT EDITS
-2. CONTACT FORM SIZE (MAKE BIGGER)
-3. SIZING OF ABT ME/ IMAGE
-4. SVG NOISE/GRAIN FILTER
-5. INSTALL MAILER TO EMAIL
+1. CONTACT FORM EDITS
+2. INSTALL MAILER TO EMAIL
 ------------------------------
-6. DRAWING OF ME BEING CREATED AS BACKGROUND
-7. CONTACT FORM MESSAGE
-8. SAVE CONTACT FORM INFO
-9. BORDER WITH DARK AND LIGHT MODE
+3. EDIT RIGHT MARGIN FOR PORTFOLIO AND ABOUT
+4. PORTFOLIO FORM TRANSFORMATION ON HOVER
+5. SVG NOISE/GRAIN FILTER OR DRAWING OF ME BEING CREATED AS BACKGROUND
+5. CONTACT FORM MESSAGE
+6. SAVE CONTACT FORM INFO
+7. BORDER
+8. DARK AND LIGHT MODE
 */
 
 @import url('familjen-grotesk.css');
@@ -165,7 +165,7 @@ li:before {
   position: fixed;
   bottom: 0;
   width: 50%;
-  padding: 0 0 20px 0;
+  padding: 0 0 10px 0;
   background-color: transparent;
 }
 
@@ -193,8 +193,8 @@ li:before {
 }
 
 .label {
+  font-family: 'FamiljenGrotesk-Regular';
   color: var(--text-color);
-  transition: color 0.3s ease;
 }
 
 #name,
@@ -218,11 +218,16 @@ li:before {
   appearance: none;
   justify-content: center;
   align-items: center;
-  background-color: transparent;
+  background-color: var(--green-accent);
   border: 2px solid var(--green-accent);
   border-radius: 15px;
   box-sizing: border-box;
   color: var(--text-color);
+  text-shadow:
+  -.5px -.5px 0 #4d4e4d,
+  .5px -.5px 0 #4d4e4d,
+  -.5px .5px 0 #4d4e4d,
+  .5px .5px 0 #4d4e4d;
   cursor: pointer;
   font-family: Helvetica, "FamiljenGrotesk-Regular", sans-serif;
   font-size: 16px;
@@ -249,15 +254,10 @@ li:before {
 
 .form-submit-btn:hover {
   color: #fff;
-  background-color: var(--green-accent);
+  background-color: #85cf4c;
   transform: translateY(-1.5px);
   box-shadow: var(--glow) 0px 0px 20px;
   border: 1px solid var(--glow);
-  text-shadow:
-    -.5px -.5px 0 #4d4e4d,
-    .5px -.5px 0 #4d4e4d,
-    -.5px .5px 0 #4d4e4d,
-    .5px .5px 0 #4d4e4d;
 }
 
 .form-submit-btn:active {
@@ -309,7 +309,7 @@ li:before {
   background-color: var(--black);
 }
 
-.starry-background {
+/* .starry-background {
   position: fixed;
   top: 0;
   left: 0;
@@ -369,4 +369,4 @@ li:before {
 
 ::-webkit-scrollbar-thumb {
   background: transparent;
-}
+} */

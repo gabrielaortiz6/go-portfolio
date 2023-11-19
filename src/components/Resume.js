@@ -17,9 +17,6 @@ const Resume = () => {
             + Resume
             </a>
           </h3>
-          {/* <a href="https://drive.google.com/file/d/1HQy7zPNxPBxmzHrhtcvTfeJfaWXChTXT/view?usp=sharing" download="gabriela-ortiz-resume.pdf" target="_blank" style={{ textDecoration: 'none', padding: '0px', margin: '0px'}}>
-            <h3 className="resume-link">+ Resume</h3>
-            </a> */}
           </Col>
         </Row>
             <h3 className="mb-3" style={{color: limeGreen, textAlign: 'right'}}>+ Proficiencies</h3>

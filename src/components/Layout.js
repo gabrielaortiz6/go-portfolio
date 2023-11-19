@@ -5,11 +5,10 @@ import '../App.css';
 
 const Layout = () => {
   return (
-    //TO DO: do svg noise filter instead
+    //TO DO: do svg noise filter or timelapse of drawing as bg
     //TO DO: border
     //TO DO: dark & light mode toggle
-    //TO DO: LENGTHEN COLUMNS!
-    <body className='starry-background'>
+    <body className='bg-color'>
       <Header />
       <Footer />
     </body>
