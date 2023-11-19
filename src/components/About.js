@@ -1,27 +1,31 @@
 //TO DO: LAYOUT EDITS
-//TO DO: CONTENT EDIT
 //TO DO: CHANGE IMAGE USED?
 
 import React from 'react';
-import { Card } from 'react-bootstrap';
+import { Card, Container, Col, Row, Image } from 'react-bootstrap';
 import myFace from '../assets/images/myface.png';
 
 const AboutMe = () => {
   return (
-    <section>
-      <Card body className="mb-3 border-0" style={{backgroundColor: 'transparent'}}>
-        <Card.Img variant="top" className="mb-3" src={myFace} alt="About Me Image" />
-        <Card.Text style={{ textAlign: 'left' }}>
-          <p>
-            Born in 1998 in Cienfuegos, Cuba, raised in Miami, FL, currently based in PVD, RI. </p>
-            <p>Bachelor's in media theory and media production (text, visual, time-based)
-            from Brown University. Fullstack developer interested in data and design. </p>
-           <p> Lover of cats.
-          </p>
-        </Card.Text>
-      </Card>
-    </section>
-  );
+      <Container style={{marginTop: '5px'}}>
+        <Row className="justify-content-end" style={{marginRight: '10px'}}>
+          <Col xs={6} md={8} >
+            <Image src={myFace} style={{ width: '95%'}} className="mb-3" rounded alt="About Me Image"/>
+          <Card body className="mb-2 border-0" style={{ backgroundColor: 'transparent' }}>
+            <Card.Text style={{ textAlign: 'right' }}>
+              <p>
+                Born in 1998 in Cienfuegos, Cuba, raised in Miami, FL, currently based in PVD, RI. </p>
+              <p>Bachelor's in media theory and media production (text, visual, time-based)
+                from Brown University. </p>
+               <p>Fullstack developer interested in data and design. </p>
+              <p> Lover of cats.
+              </p>
+            </Card.Text>
+          </Card>
+          </Col>
+           </Row>
+           </Container>
+        );
 };
 
-export default AboutMe;
+        export default AboutMe;

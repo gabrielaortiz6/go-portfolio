@@ -9,7 +9,7 @@ const Layout = () => {
     //TO DO: border
     //TO DO: dark & light mode toggle
     //TO DO: LENGTHEN COLUMNS!
-    <body className='border starry-background'>
+    <body className='starry-background'>
       <Header />
       <Footer />
     </body>
