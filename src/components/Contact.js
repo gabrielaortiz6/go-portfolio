@@ -2,9 +2,8 @@ import React, { useState } from 'react';
 import { Form, Row } from 'react-bootstrap'
 import Button from 'react-bootstrap/Button';
 
-//TO DO: MAKE CONTACT FORM LARGER
 
-//TO DO: EDIT SUBMIT BUTTON USING REACT BOOSTRAP
+//TO DO: STYLISTIC TWEAKS TO SUBMIT BUTTON
 
 //TO DO: ON CLICK [SUBMIT], WRITE A THANK YOU MESSAGE AND CLICK SEND 
 //ANOTHER MESSAGE TO GO BACK

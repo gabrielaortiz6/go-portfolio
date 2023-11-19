@@ -1,5 +1,5 @@
 //TO DO: TRANSFORM THE OVERLAY
-// TO DO: FIX RIGHT MARGIN
+//TO DO: FIX RIGHT MARGIN
 
 import React from 'react';
 import { Card, Col, Row } from 'react-bootstrap';

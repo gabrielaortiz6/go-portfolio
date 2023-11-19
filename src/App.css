@@ -363,7 +363,7 @@ box-shadow: var(--glow) 0px 0px 8px;
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
 ::-webkit-scrollbar {
   width: 5px;
@@ -377,4 +377,4 @@ box-shadow: var(--glow) 0px 0px 8px;
 
 ::-webkit-scrollbar-thumb {
   background: transparent;
-} */
+} 
