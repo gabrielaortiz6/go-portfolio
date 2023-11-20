@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/go-portfolio/static/css/main.e0d679e7.css",
+    "main.css": "/go-portfolio/static/css/main.7ef5a6cd.css",
     "main.js": "/go-portfolio/static/js/main.220807ed.js",
     "static/js/787.1ed0c42c.chunk.js": "/go-portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/black-bg.jpg": "/go-portfolio/static/media/black-bg.5e9eb92f07eb87ee8c12.jpg",
@@ -42,12 +42,12 @@
     "static/media/FamiljenGrotesk-Bold.woff2": "/go-portfolio/static/media/FamiljenGrotesk-Bold.22baa7057dd435b7e90c.woff2",
     "static/media/FamiljenGrotesk-Regular.woff2": "/go-portfolio/static/media/FamiljenGrotesk-Regular.ae5f39ca5f5a03f91614.woff2",
     "index.html": "/go-portfolio/index.html",
-    "main.e0d679e7.css.map": "/go-portfolio/static/css/main.e0d679e7.css.map",
+    "main.7ef5a6cd.css.map": "/go-portfolio/static/css/main.7ef5a6cd.css.map",
     "main.220807ed.js.map": "/go-portfolio/static/js/main.220807ed.js.map",
     "787.1ed0c42c.chunk.js.map": "/go-portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e0d679e7.css",
+    "static/css/main.7ef5a6cd.css",
     "static/js/main.220807ed.js"
   ]
 }
