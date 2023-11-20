@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/go-portfolio/static/css/main.e4257f7e.css",
-    "main.js": "/go-portfolio/static/js/main.91bedddb.js",
+    "main.js": "/go-portfolio/static/js/main.bc3b880c.js",
     "static/js/787.1ed0c42c.chunk.js": "/go-portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/black-bg.jpg": "/go-portfolio/static/media/black-bg.5e9eb92f07eb87ee8c12.jpg",
     "static/media/hori-hori.png": "/go-portfolio/static/media/hori-hori.9bbd1bf4b289f10cfe53.png",
@@ -43,11 +43,11 @@
     "static/media/FamiljenGrotesk-Regular.woff2": "/go-portfolio/static/media/FamiljenGrotesk-Regular.ae5f39ca5f5a03f91614.woff2",
     "index.html": "/go-portfolio/index.html",
     "main.e4257f7e.css.map": "/go-portfolio/static/css/main.e4257f7e.css.map",
-    "main.91bedddb.js.map": "/go-portfolio/static/js/main.91bedddb.js.map",
+    "main.bc3b880c.js.map": "/go-portfolio/static/js/main.bc3b880c.js.map",
     "787.1ed0c42c.chunk.js.map": "/go-portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e4257f7e.css",
-    "static/js/main.91bedddb.js"
+    "static/js/main.bc3b880c.js"
   ]
 }
