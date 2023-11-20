@@ -166,7 +166,7 @@ li:before {
 }
 
 .resume-link {
-  font-size: 28px;
+  font-size: 35px;
   text-align: right;
   color: var(--green-accent);
   transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -181,7 +181,6 @@ li:before {
   border-radius: 1.5px;
 }
 
-/* Make bigger cntact form */
 .flex-box {
   display: flex;
   align-items: right;
