@@ -13,7 +13,7 @@ const Resume = () => {
         <Row className="mb-3">
           <Col>
           <h3> 
-          <a href="https://drive.google.com/file/d/1HQy7zPNxPBxmzHrhtcvTfeJfaWXChTXT/view?usp=sharing" download="gabriela-ortiz-resume.pdf" target="_blank" className="resume-link" style={{ textDecoration: 'none', padding: '5px', margin: '2px', fontSize: '35px'}}>
+          <a href="https://drive.google.com/file/d/1HQy7zPNxPBxmzHrhtcvTfeJfaWXChTXT/view?usp=sharing" download="gabriela-ortiz-resume.pdf" target="_blank" className="resume-link" style={{ textDecoration: 'none', padding: '5px', margin: '2px', fontSize: '40px'}}>
             + Resume
             </a>
           </h3>
