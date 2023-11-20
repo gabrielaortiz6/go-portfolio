@@ -162,6 +162,7 @@ li:before {
   width: 50%;
   padding: 0 0 10px 0;
   background-color: transparent;
+  font-size: 25px;
 }
 
 .resume-link {
