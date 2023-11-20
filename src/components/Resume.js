@@ -20,7 +20,7 @@ const Resume = () => {
           </Col>
         </Row>
             <h3 className="mb-3" style={{color: limeGreen, textAlign: 'right'}}>+ Proficiencies</h3>
-            <ul className="mb-5" style={{color: textColor, fontSize: '20px'}}>
+            <ul className="mb-5" style={{color: textColor, fontSize: '28px'}}>
               {proficiencies.map((skill, index) => (
                 <li className="mb-2" style={{ textDecoration: 'none'}} key={index}>{skill}</li>
               ))}
