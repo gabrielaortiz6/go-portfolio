@@ -8,7 +8,7 @@ const Footer = () => {
       <Container className="mt-4" style={{ fontStyle: 'italic'}}>
         <Row style={{ margin: '0px', padding: '0px'}}>
           <Col style={{ margin: '0px'}}>
-            <a href="https://github.com/gabrielaortiz6/" target="_blank" className="link-container" rel="noopener noreferrer">
+            <a style={{fontSize:'20px'}}href="https://github.com/gabrielaortiz6/" target="_blank" className="link-container" rel="noopener noreferrer">
               (github)
             </a>
           </Col>
