@@ -9,7 +9,7 @@ const AboutMe = () => {
       <Container style={{marginTop: '5px'}}>
         <Row className="justify-content-end" style={{marginRight: '5px'}}>
           <Col xs={6} md={9} >
-            <Image src={myFace} style={{ width: '95%'}} className="mb-3" rounded alt="About Me Image"/>
+            {/* <Image src={myFace} style={{ width: '95%'}} className="mb-3" rounded alt="About Me Image"/> */}
           <Card body className="mb-2 border-0" style={{ backgroundColor: 'transparent' }}>
             <Card.Text style={{ textAlign: 'right' }}>
               <p>
