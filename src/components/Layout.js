@@ -10,9 +10,11 @@ const Layout = () => {
     //TO DO: do svg noise filter or timelapse of drawing as bg
     //TO DO: border
     //TO DO: dark & light mode toggle
-    <body className='bg-color bg-grain'>
-      <Header />
-      <Footer />
+    <body className='bg'>
+       <div className='element'>
+        <Header />
+        <Footer />
+        </div>
     </body>
   );
 };
