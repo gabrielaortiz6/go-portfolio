@@ -13,14 +13,14 @@ const Resume = () => {
         <Row className="mb-3">
           <Col>
           <h3> 
-          <a href="https://drive.google.com/file/d/14rNPTU2m0BRmA2EDa2LA48S9_EN7Xx0r/view?usp=sharing" download="gabriela-ortiz-resume.pdf" target="_blank" className="resume-link" style={{ textDecoration: 'none', padding: '5px', margin: '2px', fontSize: '38px'}}>
+          <a href="https://drive.google.com/file/d/14rNPTU2m0BRmA2EDa2LA48S9_EN7Xx0r/view?usp=sharing" download="gabriela-ortiz-resume.pdf" target="_blank" className="resume-link" style={{ textDecoration: 'none', padding: '5px', margin: '2px', fontSize: '35px'}}>
             + Resume
             </a>
           </h3>
           </Col>
         </Row>
-            <h3 className="mb-3" style={{color: limeGreen, textAlign: 'right', fontSize: '35px'}}>+ Proficiencies</h3>
-            <ul className="mb-5" style={{color: textColor, fontSize: '28px'}}>
+            <h3 className="mb-3" style={{color: limeGreen, textAlign: 'right', fontSize: '32px'}}>+ Proficiencies</h3>
+            <ul className="mb-5" style={{color: textColor, fontSize: '25px'}}>
               {proficiencies.map((skill, index) => (
                 <li className="mb-2" style={{ textDecoration: 'none'}} key={index}>{skill}</li>
               ))}

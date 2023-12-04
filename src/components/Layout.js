@@ -11,7 +11,7 @@ const Layout = () => {
     //TO DO: border
     //TO DO: dark & light mode toggle
     <body className='bg'>
-       <div className='element'>
+      <div className='element'>
         <Header />
         <Footer />
         </div>
