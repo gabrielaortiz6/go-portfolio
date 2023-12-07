@@ -342,35 +342,8 @@ box-shadow: var(--glow) 0px 0px 8px;
   height: 100vh;
   filter: contrast(150%) brightness(90%);
   opacity: 0.90;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' opacity='0.7' viewBox='80 40 290 145'%3E%3Cfilter id='displacementFilter'%3E%3CfeTurbulence type='turbulence' baseFrequency='4' numOctaves='2' result='turbulence'/%3E%3CfeDisplacementMap in2='turbulence' in='SourceGraphic' scale='50' xChannelSelector='R' yChannelSelector='B' id='gfg'/%3E%3C/filter%3E%3Ccircle cx='130' cy='130' r='130' stroke='white' style= 'filter: url(%23displacementFilter)' /%3E%3C/svg%3E ");
-  /* background: 
-	radial-gradient(circle at 10% 60%, transparent 45%, rgba(255, 255, 255, 0.555) 54%, black 65%),
-  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='5' numOctaves='5' result='noise'/%3E%3CfeColorMatrix in='noise' type='matrix' values='10' result='coloredNoise'/%3E%3CfeBlend in='SourceGraphic' in2='coloredNoise' mode='multiply'/%3E%3C/feFilter%3E%3Crect width='100%' height='100%' filter='url(%23noiseFilter)' /%3E%3C/svg%3E"); */
-  /* radial-gradient(circle at 50% 50%, transparent 0%, rgba(255, 255, 255, 0.555) 25%, black 50%),
-  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='displacementFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.1' result='noise'/%3E%3CfeDisplacementMap in2='noise' in='SourceGraphic' scale='20' xChannelSelector='R' yChannelSelector='G'/%3E%3C/feFilter%3E%3Crect width='100%' height='100%' filter='url(%23displacementFilter)' /%3E%3C/svg%3E"); */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' opacity='0.7' viewBox='80 40 290 145'%3E%3Cfilter id='displacementFilter'%3E%3CfeTurbulence type='turbulence' baseFrequency='4' numOctaves='2' result='turbulence'/%3E%3CfeDisplacementMap in2='turbulence' in='SourceGraphic' scale='50' xChannelSelector='R' yChannelSelector='B' id='gfg'/%3E%3C/filter%3E%3Ccircle cx='130' cy='130' r='130' stroke='white' style= 'filter: url(%23displacementFilter)' /%3E%3C/svg%3E "); 
 }
-
-/* .svg-filter {
-  filter: contrast(230%) brightness(150%);
-  background: 
-	linear-gradient(126deg, rgba(0,0,0,1), rgba(255,255,253,0.32)),
-	url("data:image/svg+xml,%3Csvg viewBox='0 0 267 267' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='7.03' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-}
-   */
-
-/* .bg-grain {
-  position: absolute;
-  background-image: url('assets/images/black-bg.jpg');
-  background-image: url('assets/images/10.jpg');
-  background-size: cover;
-  height: 100vh;
-  opacity: 80%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-} */
 
 /* .starry-background {
   position: fixed;
