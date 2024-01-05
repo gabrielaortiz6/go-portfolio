@@ -7,11 +7,10 @@ import blackBg from '../assets/images/black-bg.jpg';
 
 const Layout = () => {
   return (
-    //TO DO: do svg noise filter or timelapse of drawing as bg
     //TO DO: border
     //TO DO: dark & light mode toggle
     <body className='bg'>
-      <div className='element'>
+      <div className='halo'>
         <Header />
         <Footer />
         </div>

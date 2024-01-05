@@ -1,5 +1,4 @@
 /* ENTIRE LIST OF TO DOS
-1. SVG NOISE/GRAIN FILTER OR DRAWING OF ME BEING CREATED AS BACKGROUND
 2. CONTACT FORM MESSAGE
 3. SAVE CONTACT FORM INFO
 4. BORDER
@@ -46,6 +45,27 @@
 .App-link {
   color: var(--text-color);
   transition: color 0.3s, transform 0.3s;
+}
+
+.bg {
+  margin: 0;
+  min-height: 100vh;
+  background-color: black;
+  overflow: hidden;
+}
+
+.halo {
+  position: relative;
+}
+
+.bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(ellipse at top left, rgba(0, 0, 0, 0.373) 28%, rgba(115, 112, 112, 0.295) 35%, rgba(255, 255, 255, 0.481) 40%, transparent 65%);
 }
 
 .header {
@@ -332,66 +352,16 @@ box-shadow: var(--glow) 0px 0px 8px;
   transition: opacity 0.3s ease-in-out, height 0.3s ease-in-out;
 }
 
-.bg {
-  position: relative;
-  height: 100vh;
-  background-color: black;
-}
-
-.element {
-  height: 100vh;
-  filter: contrast(150%) brightness(90%);
-  opacity: 0.90;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' opacity='0.7' viewBox='80 40 290 145'%3E%3Cfilter id='displacementFilter'%3E%3CfeTurbulence type='turbulence' baseFrequency='4' numOctaves='2' result='turbulence'/%3E%3CfeDisplacementMap in2='turbulence' in='SourceGraphic' scale='50' xChannelSelector='R' yChannelSelector='B' id='gfg'/%3E%3C/filter%3E%3Ccircle cx='130' cy='130' r='130' stroke='white' style= 'filter: url(%23displacementFilter)' /%3E%3C/svg%3E "); 
-}
-
-/* .starry-background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  background-color: black;
-}
-
-.starry-background::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: radial-gradient(white, rgba(255, 255, 255, .2) 2px, transparent 40px),
-    radial-gradient(white, rgba(255, 255, 255, .15) 1px, transparent 30px),
-    radial-gradient(white, rgba(255, 255, 255, .1) 2px, transparent 40px),
-    radial-gradient(rgba(255, 255, 255, .4), rgba(255, 255, 255, .1) 2px, transparent 30px);
-  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
-  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
-  animation: twinkling 3s infinite;
-}
-
-@keyframes twinkling {
-
-  0%,
-  100% {
-    opacity: 0.9;
+/* Media Query for screens smaller than 768px wide */
+@media (max-width: 1024px) {
+  .bg {
+    height: 50vh;
   }
 
-  50% {
-    opacity: 0.4;
+  .element {
+    height: 50vh;
   }
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-} */
 
 ::-webkit-scrollbar {
   width: 5px;
