@@ -7,6 +7,30 @@
 
 @import url('familjen-grotesk.css');
 
+.space-mono-regular {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.space-mono-bold {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.space-mono-regular-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.space-mono-bold-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+
 :root {
   --black: #0D0D0D;
   --text-color: #eff1ec;
@@ -33,7 +57,7 @@
 
 .App-header {
   background-color: var(--black);
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -70,9 +94,10 @@
 
 .header {
   font-family: 'FamiljenGrotesk-Bold';
-  font-size: 4.5rem;
-  color: var(--green-accent);
-  letter-spacing: 2.5px;
+  font-size: 3rem;
+  color: white;
+  letter-spacing: .65rem;
+  margin-top: 2rem;
   margin-bottom: 1px;
   padding-bottom: 0px;
   margin-left: 12px;
@@ -81,8 +106,8 @@
 .subheader {
   color: var(--text-color);
   font-family: 'FamiljenGrotesk-Regular';
-  font-size: 1.8rem;
-  letter-spacing: 1px;
+  font-size: 1.2rem;
+  letter-spacing: 5px;
   margin-top: 0px;
   padding-top: 0px;
   margin-left: 12px;
@@ -96,10 +121,10 @@ h3 {
 }
 
 p {
-  font-family: 'FamiljenGrotesk-Regular';
+  font-family: 'Space Mono', 'Courier New', Courier, monospace;
   color: var(--text-color);
-  letter-spacing: 1.75px;
-  font-size: 24px;
+  letter-spacing: 1.6px;
+  font-size: 18px;
 }
 
 ul {
@@ -129,9 +154,9 @@ li:before {
   font-family: 'FamiljenGrotesk-Variable';
   letter-spacing: 1.5px; 
   position: relative;
-  padding-left: 20px;
+  padding-left: 8px;
   transition: padding-left 0.3s ease, color 0.3s, transform 0.3s;
-  width: 15%;
+  width: 100%;
   color: var(--text-color) !important
 }
 
@@ -159,19 +184,15 @@ li:before {
 .link-container {
   font-family: 'FamiljenGrotesk-Variable';
   font-size: 18px;
-  box-shadow: inset 0 0 0 0 var(--green-accent);
-  color: var(--green-accent);
-  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  color: white;
   text-decoration: none;
   text-align: center;
-  width: 57%;
+  width: 60%;
 }
 
 .link-container:hover {
-  background-color: var(--green-accent);
-  box-shadow: 0 0 10px var(--green-accent);
-  color: var(--black);
-  transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  color: var(--green-accent);
+  transition: color 0.5s ease-in-out;
   padding: 8px;
   border-radius: 1.5px;
 }
@@ -179,8 +200,8 @@ li:before {
 .fixed-bottom {
   position: fixed;
   bottom: 0;
-  width: 50%;
-  padding: 0 0 10px 0;
+  width: 55%;
+  padding: 0 2px 10px 0;
   background-color: transparent;
   font-size: 25px;
 }
@@ -209,6 +230,61 @@ li:before {
 .label {
   font-family: 'FamiljenGrotesk-Regular';
   color: var(--text-color);
+}
+
+.card-custom {
+  cursor: pointer;
+  background: transparent !important; /* Remove background */
+  border: none !important; /* Remove border */
+  box-shadow: none !important; /* Remove any shadow */
+  text-align: center; /* Center align the text */
+  margin: 1rem 30px 4rem 30px; /* Add some margin if needed */
+
+}
+
+.card-title-custom {
+  font-size: 4rem !important;
+  cursor: pointer;
+  margin: 0;
+  color: white !important ;
+  font-weight: 200 !important;
+  position: relative;
+  margin: auto !important;
+}
+
+.card-title-custom:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  margin: auto !important;
+  height: 1px; 
+  background-color: white;
+  transition: 0.3s ease-in-out;
+}
+
+.container-custom {
+  padding: 40px;
+  margin-top: 12px;
+  margin-bottom: 10px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-radius: 4px;
+}
+
+.back-button {
+  color: white;
+  font-size: 2rem;
+  transition: background-color 0.3s, color 0.3s;
+  display: inline-block !important; /* Display inline-block for positioning */
+  padding: 2px 0px 2px 0px !important;
+}
+
+.back-button:hover {
+  background-color: white;
+  color: black;
 }
 
 #name,
@@ -287,72 +363,86 @@ box-shadow: var(--glow) 0px 0px 8px;
   transform: translateY(0);
 }
 
-.container {
+.section-coding {
+  padding-bottom: 150px;
+}
+
+.section-title {
+  width: 20%;
+  margin: auto;
+  font-size: 3rem !important;
+  text-align: center;
+  color: white !important ;
+  font-weight:200 !important;
+  border-bottom: solid 2px white;
+}
+
+.container-coding {
   display: flex;
   text-align: center;
   position: relative;
+  padding-bottom: 20px;
 }
 
-.project-link {
-  color: var(--text-color);
-  transition: color 0.3s;
-  text-decoration: none;
-  font-size: 22px;
-  font-family: 'FamiljenGrotesk-Bold';
-  letter-spacing: 1.2px;
-  font-size: 22px;
-  text-align: center;
-  align-items: flex-end;
-  position: absolute;
-  bottom: 25%;
-  left: 50%;
-  transform: translateX(-50%) translateY(50%);
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+.card-container-coding {
+justify-content: center !important;
 }
 
-.image-overlay {
+.content:hover {
+  transform: scale(1.05);
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out, height 0.3s ease-in-out;
+}
+
+.card-image::after {
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(112, 112, 112, 0.2), rgba(0, 0, 0, 0.82));
-  border-radius: 4px;
-  transition: background 0.3s ease-in-out;
+  background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.4));
+  transition: background 0.3s;
+  pointer-events: none;
 }
 
-.content:hover {
-  transform: scale(1.05);
+.title {
+  margin-bottom: 20px !important; 
+  font-size: 1.75rem !important;
+  text-align: right;
 }
 
-.content:hover .project-link {
-  opacity: 1;
-  transform: translateX(-50%) translateY(0);
-  transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
-  font-size: 23px;
+.project-desc {
+  text-align: end !important;
+  margin-left: 2rem !important;
 }
 
-.content-overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 0;
-  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8));
-  border-radius: 4px;
-  transition: height 0.3s ease-in-out;
-  overflow: hidden;
-  opacity: 0;
+.contact-title {
+  width: 20%;
+  margin: auto;
+  font-size: 4rem !important;
+  text-align: center;
+  color: white !important ;
+  font-weight: 200 !important;
+  margin-top: 10%;
 }
 
-.content:hover .content-overlay {
-  opacity: 1;
-  height: 100%;
-  transition: opacity 0.3s ease-in-out, height 0.3s ease-in-out;
+.contact-email {
+  display: flex;
+  justify-content: center !important;
+  font-size: 2rem !important;
+  color: white !important ;
+  font-weight: 200 !important;
+  text-decoration: none;
+  font-style: italic;
+  margin-top: 50px;
 }
 
-/* Media Query for screens smaller than 768px wide */
+.contact-email:hover {
+  color: var(--green-accent) !important;
+  transition: color 0.3s;
+}
+
 @media (max-width: 1024px) {
   .bg {
     height: 50vh;
